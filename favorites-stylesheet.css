@@ -209,14 +209,12 @@ nav img{
 .summary_5{
     width: 200px;
     margin: 10px;
-    border:3px solid black;
-    background-color: #f8f8f8;
+    background-color: #fff;
 }
 .summary_6{
     width: 200px;
     margin: 10px;
-    border:3px solid black;
-    background-color: #f8f8f8;
+    background-color: #fff;
 }
 .summary_5_image{
     width: 500px;
@@ -225,6 +223,10 @@ nav img{
     border-radius: 3px;
     background-color: #f8f8f8;
 }
+.image-5{
+    width:100%;
+    height:100%;
+}
 .summary_6_image{
     width: 500px;
     margin: 10px;
@@ -232,11 +234,23 @@ nav img{
     border-radius: 3px;
     background-color: #f8f8f8;
 }
+.image-6{
+    width:100%;
+    height:100%;
+}
 .border-break{
     position:absolute;
     text-align:center;
     width:100%;
     height:100px;
     top:756.42px;
+    background-color:#4E0C1D;
+}
+.border-break_2{
+position:absolute;
+    text-align:center;
+    width:100%;
+    height:100px;
+    top: 1566.42px;
     background-color:#4E0C1D;
 }
