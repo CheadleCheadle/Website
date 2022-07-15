@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
         <link rel="stylesheet" href="home.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <title> My favorite books</title>
     </head>
     <body>
             <nav>
                 <a href="web.html"> <img src="https://us.123rf.com/450wm/rashadashurov/rashadashurov1909/rashadashurov190906241/130456803-book-concept-logotype-template-design-business-logo-icon-shape-book-simple-illustration.jpg?ver=6"></a>
-                <div class ="nav-links">
+                <div class ="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Favorites</a></li>
-                        <li><a href="">Essays</a></li>
+                        <li><a href="web.html">Home</a></li>
+                        <li><a href="favorites.html">Favorites</a></li>
+                        <li><a href="essay.html">Essays</a></li>
                     </ul>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
 
 
@@ -33,6 +36,17 @@
             <img class="a-block-section-image-half-right" src="https://legal.thomsonreuters.com/content/dam/ewp-m/images/legal/en/artworked-images/201922_139306828-gradient.png.transform/rect-768/q90/image.png" alt="some picture of books">
         </div>
     </div>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-400px";
+    }
+</script>
 
     </body>
 </html>
